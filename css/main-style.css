@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Staatliches&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    font-family: 'Staatliches', cursive;
+    font-size: x-large;
+    cursor: default;
+}
+
+.logo,
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    justify-content: center;
+}
+
+nav {
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.manu a {
+    margin: 10px;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    border-radius: 2px;
+}
+
+.active {
+    border-bottom: 3px solid rgb(46, 90, 46);
+}
+
+#create {
+    padding: 8px;
+    border: 1px solid green;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+#create:hover {
+    background: rgb(46, 90, 46);
+    color: white;
+}
+
+#dilog-create {
+    position: fixed;
+    top:0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 10;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+dialog {
+    position: fixed;
+    top: 0.8vh;
+    left: 35%;
+    width: 30%;
+    z-index: 100;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+dialog header {
+    background: rgb(46, 90, 46);
+    color: white;
+    font-size: 1.25rem;
+    width: 100%;
+    padding: 1rem;
+}
+
+dialog section {
+    padding: 5px;
+}
+
+dialog label {
+    font-weight: bold;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+input:focus,textarea:focus{
+    outline: 1px solid gray;
+}
+
+dialog menu {
+    display: flex;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+
+menu button{
+    margin: 0 10px;
+    padding: 10px;
+    cursor: pointer;
+    background: white;
+    border-radius: 5px;
+}
+#cancel{
+    border: 1px solid red;
+}
+#cancel:hover{
+    background: red;
+    color: white;
+}
+#create-task{
+    border: 1px solid green;
+}
+#create-task:hover{
+    background: rgb(46, 90, 46);
+    color: white;
+}
+
+textarea{
+    resize: none;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    border-radius: 5px;
+}
+
+#container {
+    width: 60%;
+    margin: auto;
+}
+
+.card,.time{
+    margin-top: 25px;
+}
+
+.card{
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    color: white;
+    background-image: linear-gradient(to right, rgb(1, 1, 70), rgb(2, 64, 69));
+
+}
+
+.title,.time{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+h4{
+    margin: 0;
+    padding: 0;
+    font-size: larger;
+}
+
+h4:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.time span{
+    font-weight: bold;
+    font-size: large;
+}
+
+.fa-trash-o,.fa-check-square-o{
+    font-size: 80px;
+    cursor: pointer;
+
+}
+
+.fa-check-square-o{
+    color: green;
+}
+
+.fa-trash-o{
+    color: red;
+}
+
+.title{
+    padding: 20px;
+}
+
+.footer{
+    padding: 10px;
+}
+
+#image-nothing{
+    height: 86.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(159, 250, 219);
+}

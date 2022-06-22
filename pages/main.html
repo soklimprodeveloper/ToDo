@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <link rel="shortcut icon" href="../images/tab-logo.png">
+    <link rel="stylesheet" href="../css/main-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            TaskToDo
+        </div>
+        <div class="manu">
+            <a href="main.html" class="active">Tasks</a>
+            <a href="done.html">Done</a>
+        </div>
+        <div class="create">
+            <button id="create" onclick="show(dom_dilog)">Create +</button>
+        </div>
+    </nav>
+    <div id="dilog-create" style="display:none;">
+        <dialog open>
+            <header id="dilog-header">Create A Task</header>
+            <section>
+                <input type="text" id="title" placeholder="Task Title">
+                <label>Date</label>
+                <input type="date" id="date">
+                <label>Time Start</label>
+                <input type="time" id="time-start">
+                <label>Time End</label>
+                <input type="time" id="time-end">
+                <textarea id="description" cols="3" rows="3" placeholder="Description"></textarea>
+            </section>
+            <menu>
+              <button id="cancel" onclick="onCancel()">Cancel</button>
+              <button id="create-task" onclick="onCreate()">Create</button>
+            </menu>
+          </dialog>
+    </div>
+    <div id="container">
+
+    </div>
+</body>
+<script src="../js/setTask.js"></script>
+</html>

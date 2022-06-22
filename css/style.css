@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Staatliches&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to right, rgb(3, 11, 168), rgb(232, 104, 249));
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: white;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+}
+
+.taskstyle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.task {
+    background-color: white;
+    padding: 20px;
+    width: 20vw;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+h2 {
+    text-align: center;
+    color: green;
+}
+
+.logo,
+.btn,
+.start,.animation-box {
+    display: flex;
+    justify-content: center;
+}
+
+
+a {
+    padding: 10px;
+    border: 1px solid green;
+    border-radius: 5px;
+    background-color: white;
+    font-size: larger;
+    text-decoration: none;
+    color: black;
+    width: 20vw;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+a:hover {
+    background-color: rgb(46, 90, 46);
+    color: white;
+}
+
